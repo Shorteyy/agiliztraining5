@@ -34,8 +34,8 @@ view: distribution_centers {
 
   dimension: location {
     type: location
-    sql_longitude: ${latitude} ;;
-    sql_latitude: ${longitude} ;;
+    sql_longitude: ${longitude} ;;
+    sql_latitude: ${latitude} ;;
   }
 
   measure: count {
