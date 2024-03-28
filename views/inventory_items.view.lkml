@@ -77,6 +77,12 @@ view: inventory_items {
     sql: ${TABLE}.product_retail_price ;;
   }
 
+  measure: avg_retail_price {
+    type: average
+    sql: ${product_retail_price} ;;
+    value_format_name: eur
+  }
+
   dimension: product_sku {
     type: string
     sql: ${TABLE}.product_sku ;;
