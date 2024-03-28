@@ -92,6 +92,7 @@ explore: users {}
 explore: distribution_centers {}
 
 explore: orders {
+  label: "Orders & Users"
   join: users {
     type: left_outer
     sql_on: ${orders.user_id} = ${users.id} ;;
